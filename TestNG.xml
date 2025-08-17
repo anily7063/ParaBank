@@ -1,0 +1,33 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Project" parallel="false" thread-count="3">
+
+    <parameter name="baseURL" value="https://parabank.parasoft.com/parabank/index.htm"/>
+    <test name="Run in Chrome Browser">
+        <parameter name="browser" value="chrome">
+            <classes>
+                <class name="TestCases.TC_Register"/>
+                <class name="TestCases.TC_Login"/>
+
+            </classes>
+        </parameter>
+    </test>
+<!--        <test name="Run in Firefox Browser">-->
+<!--            <parameter name="browser" value="firefox">-->
+<!--                <classes>-->
+<!--                    <class name="TestCases.TC_Register"/>-->
+<!--                    <class name="TestCases.TC_Login"/>-->
+
+<!--                </classes>-->
+<!--            </parameter>-->
+<!--        </test>-->
+<!--        <test name="Run in IE Browser">-->
+<!--            <parameter name="browser" value="ie">-->
+<!--                <classes>-->
+<!--                    <class name="TestCases.TC_Register"/>-->
+<!--                    <class name="TestCases.TC_Login"/>-->
+
+<!--                </classes>-->
+<!--            </parameter>-->
+<!--        </test>-->
+</suite>
